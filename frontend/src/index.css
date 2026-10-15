@@ -1,0 +1,261 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0b0f19] text-slate-100 font-sans;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.6);
+}
+
+/* =========================================================================
+   Theme Stylesheets
+   ========================================================================= */
+
+/* 1. Pitch Black Minimalist (OLED) */
+.theme-black-minimalist,
+.theme-black-minimalist body {
+  background-color: #000000 !important;
+  color: #f8fafc !important;
+}
+.theme-black-minimalist div[class*="bg-[#090d16]"],
+.theme-black-minimalist div[class*="bg-[#0e1424]"],
+.theme-black-minimalist div[class*="bg-[#111827]"],
+.theme-black-minimalist header,
+.theme-black-minimalist aside,
+.theme-black-minimalist nav {
+  background-color: #000000 !important;
+}
+.theme-black-minimalist .bg-slate-900,
+.theme-black-minimalist .bg-slate-900\/40,
+.theme-black-minimalist .bg-slate-900\/50,
+.theme-black-minimalist .bg-slate-900\/60,
+.theme-black-minimalist .bg-slate-900\/70,
+.theme-black-minimalist .bg-slate-900\/80,
+.theme-black-minimalist .bg-slate-900\/90,
+.theme-black-minimalist .bg-slate-800,
+.theme-black-minimalist .bg-slate-800\/60,
+.theme-black-minimalist .bg-slate-800\/70,
+.theme-black-minimalist .bg-slate-800\/80,
+.theme-black-minimalist .bg-slate-800\/90 {
+  background-color: #0c0c0c !important;
+}
+.theme-black-minimalist [class*="border-white/"],
+.theme-black-minimalist [class*="border-white"] {
+  border-color: #1a1a1a !important;
+}
+
+/* 2. Cyberpunk Neon */
+.theme-cyberpunk-neon,
+.theme-cyberpunk-neon body {
+  background-color: #060814 !important;
+  color: #f1f5f9 !important;
+}
+.theme-cyberpunk-neon div[class*="bg-[#090d16]"],
+.theme-cyberpunk-neon div[class*="bg-[#0e1424]"],
+.theme-cyberpunk-neon div[class*="bg-[#111827]"],
+.theme-cyberpunk-neon header,
+.theme-cyberpunk-neon aside,
+.theme-cyberpunk-neon nav {
+  background-color: #0b0f24 !important;
+}
+.theme-cyberpunk-neon .bg-slate-900,
+.theme-cyberpunk-neon .bg-slate-900\/40,
+.theme-cyberpunk-neon .bg-slate-900\/50,
+.theme-cyberpunk-neon .bg-slate-900\/60,
+.theme-cyberpunk-neon .bg-slate-900\/70,
+.theme-cyberpunk-neon .bg-slate-900\/80,
+.theme-cyberpunk-neon .bg-slate-900\/90,
+.theme-cyberpunk-neon .bg-slate-800,
+.theme-cyberpunk-neon .bg-slate-800\/60,
+.theme-cyberpunk-neon .bg-slate-800\/70,
+.theme-cyberpunk-neon .bg-slate-800\/80,
+.theme-cyberpunk-neon .bg-slate-800\/90 {
+  background-color: #111838 !important;
+}
+.theme-cyberpunk-neon [class*="border-white/"],
+.theme-cyberpunk-neon [class*="border-white"] {
+  border-color: rgba(0, 240, 255, 0.18) !important;
+}
+.theme-cyberpunk-neon .text-cyan-400 {
+  color: #00f0ff !important;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+}
+.theme-cyberpunk-neon .text-indigo-400 {
+  color: #ff007f !important;
+}
+
+/* 3. Emerald Matrix */
+.theme-emerald-matrix,
+.theme-emerald-matrix body {
+  background-color: #040d08 !important;
+  color: #ecfdf5 !important;
+}
+.theme-emerald-matrix div[class*="bg-[#090d16]"],
+.theme-emerald-matrix div[class*="bg-[#0e1424]"],
+.theme-emerald-matrix div[class*="bg-[#111827]"],
+.theme-emerald-matrix header,
+.theme-emerald-matrix aside,
+.theme-emerald-matrix nav {
+  background-color: #08170e !important;
+}
+.theme-emerald-matrix .bg-slate-900,
+.theme-emerald-matrix .bg-slate-900\/40,
+.theme-emerald-matrix .bg-slate-900\/50,
+.theme-emerald-matrix .bg-slate-900\/60,
+.theme-emerald-matrix .bg-slate-900\/70,
+.theme-emerald-matrix .bg-slate-900\/80,
+.theme-emerald-matrix .bg-slate-900\/90,
+.theme-emerald-matrix .bg-slate-800,
+.theme-emerald-matrix .bg-slate-800\/60,
+.theme-emerald-matrix .bg-slate-800\/70,
+.theme-emerald-matrix .bg-slate-800\/80,
+.theme-emerald-matrix .bg-slate-800\/90 {
+  background-color: #0d2617 !important;
+}
+.theme-emerald-matrix [class*="border-white/"],
+.theme-emerald-matrix [class*="border-white"] {
+  border-color: rgba(16, 185, 129, 0.20) !important;
+}
+.theme-emerald-matrix .text-cyan-400 {
+  color: #10b981 !important;
+}
+.theme-emerald-matrix .text-indigo-400 {
+  color: #34d399 !important;
+}
+
+/* 4. Sunset Velvet */
+.theme-sunset-velvet,
+.theme-sunset-velvet body {
+  background-color: #12070c !important;
+  color: #fff1f2 !important;
+}
+.theme-sunset-velvet div[class*="bg-[#090d16]"],
+.theme-sunset-velvet div[class*="bg-[#0e1424]"],
+.theme-sunset-velvet div[class*="bg-[#111827]"],
+.theme-sunset-velvet header,
+.theme-sunset-velvet aside,
+.theme-sunset-velvet nav {
+  background-color: #1d0b13 !important;
+}
+.theme-sunset-velvet .bg-slate-900,
+.theme-sunset-velvet .bg-slate-900\/40,
+.theme-sunset-velvet .bg-slate-900\/50,
+.theme-sunset-velvet .bg-slate-900\/60,
+.theme-sunset-velvet .bg-slate-900\/70,
+.theme-sunset-velvet .bg-slate-900\/80,
+.theme-sunset-velvet .bg-slate-900\/90,
+.theme-sunset-velvet .bg-slate-800,
+.theme-sunset-velvet .bg-slate-800\/60,
+.theme-sunset-velvet .bg-slate-800\/70,
+.theme-sunset-velvet .bg-slate-800\/80,
+.theme-sunset-velvet .bg-slate-800\/90 {
+  background-color: #2b101c !important;
+}
+.theme-sunset-velvet [class*="border-white/"],
+.theme-sunset-velvet [class*="border-white"] {
+  border-color: rgba(244, 63, 94, 0.20) !important;
+}
+.theme-sunset-velvet .text-cyan-400 {
+  color: #fb923c !important;
+}
+.theme-sunset-velvet .text-indigo-400 {
+  color: #f43f5e !important;
+}
+
+/* 5. Nordic Frost */
+.theme-nordic-frost,
+.theme-nordic-frost body {
+  background-color: #070e17 !important;
+  color: #f0f9ff !important;
+}
+.theme-nordic-frost div[class*="bg-[#090d16]"],
+.theme-nordic-frost div[class*="bg-[#0e1424]"],
+.theme-nordic-frost div[class*="bg-[#111827]"],
+.theme-nordic-frost header,
+.theme-nordic-frost aside,
+.theme-nordic-frost nav {
+  background-color: #0d1826 !important;
+}
+.theme-nordic-frost .bg-slate-900,
+.theme-nordic-frost .bg-slate-900\/40,
+.theme-nordic-frost .bg-slate-900\/50,
+.theme-nordic-frost .bg-slate-900\/60,
+.theme-nordic-frost .bg-slate-900\/70,
+.theme-nordic-frost .bg-slate-900\/80,
+.theme-nordic-frost .bg-slate-900\/90,
+.theme-nordic-frost .bg-slate-800,
+.theme-nordic-frost .bg-slate-800\/60,
+.theme-nordic-frost .bg-slate-800\/70,
+.theme-nordic-frost .bg-slate-800\/80,
+.theme-nordic-frost .bg-slate-800\/90 {
+  background-color: #14243b !important;
+}
+.theme-nordic-frost [class*="border-white/"],
+.theme-nordic-frost [class*="border-white"] {
+  border-color: rgba(56, 189, 248, 0.20) !important;
+}
+.theme-nordic-frost .text-cyan-400 {
+  color: #38bdf8 !important;
+}
+.theme-nordic-frost .text-indigo-400 {
+  color: #7dd3fc !important;
+}
+
+/* 6. Royal Amethyst */
+.theme-royal-amethyst,
+.theme-royal-amethyst body {
+  background-color: #0b0717 !important;
+  color: #faf5ff !important;
+}
+.theme-royal-amethyst div[class*="bg-[#090d16]"],
+.theme-royal-amethyst div[class*="bg-[#0e1424]"],
+.theme-royal-amethyst div[class*="bg-[#111827]"],
+.theme-royal-amethyst header,
+.theme-royal-amethyst aside,
+.theme-royal-amethyst nav {
+  background-color: #150d29 !important;
+}
+.theme-royal-amethyst .bg-slate-900,
+.theme-royal-amethyst .bg-slate-900\/40,
+.theme-royal-amethyst .bg-slate-900\/50,
+.theme-royal-amethyst .bg-slate-900\/60,
+.theme-royal-amethyst .bg-slate-900\/70,
+.theme-royal-amethyst .bg-slate-900\/80,
+.theme-royal-amethyst .bg-slate-900\/90,
+.theme-royal-amethyst .bg-slate-800,
+.theme-royal-amethyst .bg-slate-800\/60,
+.theme-royal-amethyst .bg-slate-800\/70,
+.theme-royal-amethyst .bg-slate-800\/80,
+.theme-royal-amethyst .bg-slate-800\/90 {
+  background-color: #20133d !important;
+}
+.theme-royal-amethyst [class*="border-white/"],
+.theme-royal-amethyst [class*="border-white"] {
+  border-color: rgba(168, 85, 247, 0.22) !important;
+}
+.theme-royal-amethyst .text-cyan-400 {
+  color: #c084fc !important;
+}
+.theme-royal-amethyst .text-indigo-400 {
+  color: #a855f7 !important;
+}

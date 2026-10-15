@@ -1,0 +1,36 @@
+# Python cache and byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node / Frontend build dependencies
+node_modules/
+frontend/node_modules/
+frontend/.vite/
+
+# Local SQLite databases and session state
+*.db
+*.sqlite
+*.sqlite3
+
+# Scratch files and logs
+scratch/
+*.log
+
+# Windows Explorer artifacts
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editor / IDE artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
